@@ -3,19 +3,19 @@
 
 #include "01public.h"
 
-//--¶¨Ê±Ê¹ÓÃµÄIO¿Ú--//
-#define DataPort P0		//LCD1602Êı¾İ¶Ë¿Ú
-sbit    LCM_RS=P2^6;		//LCD1602ÃüÁî¶Ë¿Ú		
-sbit    LCM_RW=P2^5;		//LCD1602ÃüÁî¶Ë¿Ú		
-sbit    LCM_EN=P2^7;		//LCD1602ÃüÁî¶Ë¿Ú 
+//--å®šæ—¶ä½¿ç”¨çš„IOå£--//
+#define DataPort P0		//LCD1602æ•°æ®ç«¯å£
+sbit    LCM_RS=P2^6;		//LCD1602å‘½ä»¤ç«¯å£		
+sbit    LCM_RW=P2^5;		//LCD1602å‘½ä»¤ç«¯å£		
+sbit    LCM_EN=P2^7;		//LCD1602å‘½ä»¤ç«¯å£ 
 
 
-void  InitLcd();								//³õÊ¼»¯lcd1602
+void  InitLcd();								//åˆå§‹åŒ–lcd1602
 void  lcd_printf(uchar *s,int temp_data);
-void  WriteDataLCM(uchar dataW);						//LCDÊı¾İ
-void  WriteCommandLCM(uchar CMD,uchar Attribc);				//LCDÖ¸Áî
-void  DisplayOneChar(uchar X,uchar Y,uchar DData);			//ÏÔÊ¾Ò»¸ö×Ö·û
-void  DisplayListChar(uchar X,uchar Y,uchar *DData,L);	//ÏÔÊ¾×Ö·û´®
+void  WriteDataLCM(uchar dataW);						//LCDæ•°æ®
+void  WriteCommandLCM(uchar CMD,uchar Attribc);				//LCDæŒ‡ä»¤
+void  DisplayOneChar(uchar X,uchar Y,uchar DData);			//æ˜¾ç¤ºä¸€ä¸ªå­—ç¬¦
+void  DisplayListChar(uchar X,uchar Y,uchar *DData,L);	//æ˜¾ç¤ºå­—ç¬¦ä¸²
 void WaitForEnable(void);
 void Display10BitData(int value,uchar x,uchar y);
 

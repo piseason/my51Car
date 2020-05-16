@@ -1,12 +1,12 @@
 #ifndef __ST7565_H
 #define __ST7565_H
 
-//---°üº¬×Ö¿âÍ·ÎÄ¼ş
+//---åŒ…å«å­—åº“å¤´æ–‡ä»¶
 #define CHAR_CODE
 
 #include "01public.h"
 
-//--¶¨Ê±Ê¹ÓÃµÄIO¿Ú--//
+//--å®šæ—¶ä½¿ç”¨çš„IOå£--//
 #define DATA_PORT P0
 sbit LCD12864_CS   = P3^2;
 sbit LCD12864_RSET = P3^3;
@@ -14,7 +14,7 @@ sbit LCD12864_RS   = P2^6;
 sbit LCD12864_RW   = P2^7;
 sbit LCD12864_RD   = P2^5;
 
-//--¶¨ÒåÈ«¾Öº¯Êı--//
+//--å®šä¹‰å…¨å±€å‡½æ•°--//
 void LcdSt7565_WriteCmd(cmd);
 void LcdSt7565_WriteData(dat);
 void Lcd12864_Init();

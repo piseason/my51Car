@@ -386,6 +386,16 @@
               <FileType>1</FileType>
               <FilePath>.\04mpu6050.c</FilePath>
             </File>
+            <File>
+              <FileName>05car.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\05car.c</FilePath>
+            </File>
+            <File>
+              <FileName>06IRControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\06IRControl.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -127,7 +127,9 @@ void InitMPU6050()
 int GetData(uchar REG_Address)
 {
 	char H,L;
+	int tmp;
 	H=Single_ReadI2C(REG_Address);
 	L=Single_ReadI2C(REG_Address+1);
-	return (H<<8)+L;   //合成数据
+	tmp = 0x00FF&L;
+	return (H<<8)+tmp;   //合成数据
 }
